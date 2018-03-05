@@ -17,12 +17,20 @@
 		if (choice==3) 
 		{document.getElementById("out").innerHTML=(" You chose 3, Charmander! ");}
 		
+		{document.getElementById("chartext").style.visibility="hidden"
+		document.getElementById("chartext").style.visibility="visible"}
 		</script>
-		<h1>CHOOSE YOUR STARTER</h1>
+		<span id="text">CHOOSE YOUR STARTER</span>
 			<div>
-				1)<img src="bulbasaur.png">
-				2)<img src="squirtle.png">
-				3)<img src="charmander.png">
+				1)<img src="bulbasaur.png" onclick=bulbasaur()>
+				<div id="bulbtext">Bulbasaur is a grass-type</div>
+				<br />
+				2)<img src="squirtle.png" onclick=squirtle()>
+				<div id="squirtletext">Squirtle is a water-type</div>
+				<br />
+				3)<img src="charmander.png" onclick=charmander()>
+				<div id="chartext">Charmander is a fire-type</div>
 			</div>
+			
 	</body>
 </html>
